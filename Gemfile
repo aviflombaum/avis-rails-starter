@@ -8,8 +8,8 @@ gem "rails", github: "rails/rails", branch: "main"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use postgres as the database for Active Record
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 6.0"
@@ -52,7 +52,12 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ]
+  gem "pry-rails"
+  gem "dotenv-rails"
+  gem "standard"
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
+  gem "rspec-rails"
 end
 
 group :development do
@@ -67,6 +72,3 @@ group :development do
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
-
-
-gem "dotenv-rails", "~> 2.8"
