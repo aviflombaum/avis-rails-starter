@@ -4,6 +4,10 @@
 
 overmind over foreman.
 
+## Hosting and Deployment
+
+Hatchbox
+
 ## Rails Version
 
 Riding Rails from the main branch.
