@@ -1,5 +1,9 @@
 # Avi's Rails Starter
 
+## Process Management
+
+overmind over foreman.
+
 ## Rails Version
 
 Riding Rails from the main branch.
