@@ -1,24 +1,8 @@
-# README
+# Avi's Rails Starter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Linters
 
-Things you may want to cover:
+### Prettier
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Prettier is configured to be able to lint and format ERB templates via its normal HTML parser. This
+works with the VSCode Prettier Exension as well.
