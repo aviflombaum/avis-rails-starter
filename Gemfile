@@ -9,7 +9,7 @@ gem "rails", github: "rails/rails", branch: "main"
 gem "sprockets-rails"
 
 # Use postgres as the database for Active Record
-gem 'pg'
+gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 6.0"
@@ -27,7 +27,7 @@ gem "stimulus-rails"
 gem "tailwindcss-rails"
 
 # Be faster, you're worth it.
-gem 'oj'
+gem "oj"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -42,7 +42,7 @@ gem "redis", ">= 4.0.1"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data", platforms: %i[windows jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -72,3 +72,6 @@ group :development do
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
+
+gem "shadcn-ui", path: "/Users/avi/Development/code/Personal/open-source/shadcn-rails"
+# gem "shadcn-ui"
