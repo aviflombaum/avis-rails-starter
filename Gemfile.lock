@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/aviflombaum/shadcn-rails.git
+  revision: d091b62bcea03aa19aa51b7979c9a807f61255ea
+  specs:
+    shadcn-ui (0.0.5)
+      tailwind_merge (~> 0.7)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: c0dd179c4ef6a60989f544293fb342b052a2de33
   branch: main
@@ -94,12 +101,6 @@ GIT
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
-
-PATH
-  remote: /Users/avi/Development/code/Personal/open-source/shadcn-rails
-  specs:
-    shadcn-ui (0.0.5)
-      tailwind_merge (~> 0.7)
 
 GEM
   remote: https://rubygems.org/

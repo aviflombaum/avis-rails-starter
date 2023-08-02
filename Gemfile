@@ -73,5 +73,4 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
-gem "shadcn-ui", path: "/Users/avi/Development/code/Personal/open-source/shadcn-rails"
-# gem "shadcn-ui"
+gem "shadcn-ui", github: "aviflombaum/shadcn-rails"
