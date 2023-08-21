@@ -12,17 +12,17 @@ Hatchbox
 
 Riding Rails from the main branch.
 
-## Secret Management / Envionment Variables
+## Secret Management / Environment Variables
 
 Using dotenv.
 
 ## Testing
 
-Using rspec
+Using RSpec
 
 ## Database
 
-Using postgres as the database
+Using Postgres as the database
 
 ## Debugger
 
@@ -35,7 +35,7 @@ Using pry-rails as the debugger.
 ### Prettier
 
 Prettier is configured to be able to lint and format ERB templates via its normal HTML parser. This
-works with the VSCode Prettier Exension as well.
+works with the VSCode Prettier extension as well.
 
 ## Additional Gems
 
