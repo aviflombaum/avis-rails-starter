@@ -1,4 +1,5 @@
 require "active_support"
+# require "pry"
 
 namespace :template do
   task :reset do
@@ -16,7 +17,7 @@ namespace :template do
     puts "Renaming application module to #{app_module}..."
     file_path = "config/application.rb"
     text = File.read(file_path)
-    new_text = text.gsub(/module AvisRailsStarter/, "module #{app_module}")
+    new_text = text.gsub("module AvisRailsStarter", "module #{app_module}")
     File.open(file_path, "w") { |file| file.puts new_text }
     puts "Application module renamed successfully."
 
@@ -28,6 +29,17 @@ namespace :template do
       run `./bin/dev` to start the development environment
 
     MD
+
+    # Set the databases key in the yaml in config/database.yml for each environment
+    puts "Setting the databases key in the yaml in config/database.yml for each environment..."
+    db_config_path = "config/database.yml"
+    db_config = YAML.load_file(db_config_path, aliases: true)
+    db_name = ActiveSupport::Inflector.underscore(app_module.tr(" ", "_"))
+    db_config["development"]["database"] = "#{db_name}_development"
+    db_config["test"]["database"] = "#{db_name}_test"
+    db_config["production"]["database"] = "#{db_name}_production"
+    File.open(db_config_path, "w") { |file| file.puts db_config.to_yaml }
+    puts "Databases key in the yaml in config/database.yml set successfully."
 
     # Ask if they want to generate a new README.md
     puts "Do you want to generate a new README.md? (yes/no)"
