@@ -21,15 +21,6 @@ namespace :template do
     File.open(file_path, "w") { |file| file.puts new_text }
     puts "Application module renamed successfully."
 
-    README = <<~MD
-      # #{app_name}
-
-      ## Development
-
-      run `./bin/dev` to start the development environment
-
-    MD
-
     # Set the databases key in the yaml in config/database.yml for each environment
     puts "Setting the databases key in the yaml in config/database.yml for each environment..."
     db_config_path = "config/database.yml"
@@ -43,6 +34,15 @@ namespace :template do
 
     # Ask if they want to generate a new README.md
     puts "Do you want to generate a new README.md? (yes/no)"
+    README = <<~MD
+      # #{app_name}
+
+      ## Development
+
+      run `./bin/dev` to start the development environment
+
+    MD
+
     answer = STDIN.gets.chomp.downcase
     if answer == "yes"
       # Generate a new README.md based on the README heredoc above

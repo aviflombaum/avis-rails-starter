@@ -83,6 +83,10 @@
 }
 
 @layer base {
+  :root {
+    --font-sans: "Figtree";
+  }
+
   * {
     @apply border-border;
   }
@@ -104,7 +108,15 @@
   .code-sample span {
     @apply bg-zinc-950;
   }
+  input.error {
+    @apply border-red-400;
+  }
+
+  label.error {
+    @apply text-destructive;
+  }
 }
+
 input[type="range"] {
   display: inline-block;
   vertical-align: middle;

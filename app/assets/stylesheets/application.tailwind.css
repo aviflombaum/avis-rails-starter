@@ -4,16 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  :root {
-    --font-sans: "Figtree";
-  }
-  input.error {
-    @apply border-red-400;
-  }
-
-  label.error {
-    @apply text-destructive;
-  }
-}

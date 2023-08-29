@@ -78,4 +78,3 @@ group :development do
 end
 
 gem "shadcn-ui", github: "aviflombaum/shadcn-rails"
-gem "meta-tags"
