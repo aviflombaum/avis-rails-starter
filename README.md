@@ -69,3 +69,14 @@ preferences saved to local storage.
 ### Shell
 
 ![Shell Page](https://img.avi.nyc/gWP4wV7J+)
+
+## Hatchbox Deployment
+
+If you use hatchbox and set the environment variables
+
+```
+HATCHBOX_APP_ID
+HATCHBOX_DEPLOY_KEY
+```
+
+You can trigger a deploy to hatchbox from your `main` branch with `./bin/deploy`
