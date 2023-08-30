@@ -1,5 +1,10 @@
 # Avi's Rails Starter
 
+## Usage
+
+Use this as a starter for your new Rails application. To use, just clone or copy this repository and
+run the `rake template:reset` to reset the application to a new state for you.
+
 ## Libraries
 
 | ruby                  | 3.2.2                     |
