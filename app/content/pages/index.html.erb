@@ -3,9 +3,9 @@
   <section class="container flex justify-between h-14 items-center">
     <nav class="flex items-center space-x-6 text-sm font-medium">
       <%= render_button "~", variant: :ghost, as: :link, href: root_path %>
-      <%= render_button "Landing", variant: :ghost, as: :link, href: pages_landing_path %>
-      <%= render_button "App", variant: :ghost, as: :link, href: pages_app_path %>
-      <%= render_button "Shell", variant: :ghost, as: :link, href: pages_shell_path %>
+      <%= render_button "Landing", variant: :ghost, as: :link, href: page_path("landing") %>
+      <%= render_button "App", variant: :ghost, as: :link, href: page_path("app") %>
+      <%= render_button "Shell", variant: :ghost, as: :link, href: page_path("shell") %>
     </nav>
     <nav class="flex items-center space-x-6 text-sm font-medium"></nav>
   </section>
@@ -68,7 +68,7 @@
   <aside>
     <section class="flex justify-center pb-8 pt-8 md:pt-12">
       <p>
-        Delete this file located in <code>app/views/pages/rails.html.erb</code> whenever
+        Delete this file located in <code><%= current_page.asset.path %></code> whenever
         you're ready.
       </p>
     </section>

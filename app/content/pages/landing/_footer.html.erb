@@ -19,38 +19,18 @@
       <div class="grid grid-cols-2 gap-8 xl:col-span-2">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
-              </li>
-            </ul>
+            <%= render partial: "pages/landing/footer_nav", locals: { path: "solutions", title: "Solutions"} %>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
-              </li>
-            </ul>
+            <%= render partial: "pages/landing/footer_nav", locals: { path: "support", title: "Support"} %>
           </div>
         </div>
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
-              </li>
-            </ul>
+            <%= render partial: "pages/landing/footer_nav", locals: { path: "company", title: "Company"} %>
           </div>
           <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
-              </li>
-            </ul>
+            <%= render partial: "pages/landing/footer_nav", locals: { path: "legal", title: "Legal"} %>
           </div>
         </div>
       </div>

@@ -178,6 +178,9 @@ GEM
       net-smtp
     marcel (1.0.2)
     method_source (1.0.0)
+    mime-types (3.5.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2023.0808)
     mini_mime (1.1.2)
     minitest (5.19.0)
     msgpack (1.7.2)
@@ -292,6 +295,13 @@ GEM
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
     ruby-progressbar (1.13.0)
+    sitepress-core (3.2.2)
+      mime-types (>= 2.99)
+    sitepress-rails (3.2.2)
+      actionpack (>= 6.0)
+      railties (>= 6.0)
+      sitepress-core (= 3.2.2)
+      sprockets-rails (>= 2.0.0)
     smart_properties (1.17.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
@@ -340,6 +350,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-22
+  arm64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
@@ -364,6 +375,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   shadcn-ui!
+  sitepress-rails (~> 3.2)
   sprockets-rails
   standard
   stimulus-rails

@@ -78,3 +78,5 @@ group :development do
 end
 
 gem "shadcn-ui", github: "aviflombaum/shadcn-rails"
+
+gem "sitepress-rails", "~> 3.2"
