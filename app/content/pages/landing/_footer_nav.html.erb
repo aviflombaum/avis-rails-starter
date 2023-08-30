@@ -1,0 +1,8 @@
+<h3 class="text-sm font-semibold leading-6 text-white"><%= title %></h3>
+<ul role="list" class="mt-6 space-y-4">
+  <% Sitepress.site.root.dig(path).flatten.each do |page| %>
+    <li>
+      <%= link_to_page page, class: "text-sm leading-6 text-gray-300 hover:text-white" %>
+    </li>
+  <% end %>
+</ul>

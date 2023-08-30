@@ -1,8 +1,8 @@
 module PageHelper
   # Creates a hyperlink to a page using the `title` key. Change the default in the args
   # below if you use a different key for page titles.
-  def link_to_page(page, title_key: "title")
-    link_to page.data.fetch(title_key, page.request_path), page.request_path
+  def link_to_page(page, title_key: "title", **kwargs)
+    link_to page.data.fetch(title_key, page.request_path), page.request_path, **kwargs
   end
 
   # Quick and easy way to change the class of a page if its current. Useful for
